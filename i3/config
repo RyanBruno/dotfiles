@@ -28,7 +28,7 @@ exec --no-startup-id st -n "math" -e "/bin/bash" -c "R --quiet;/bin/bash"
 # Set Background with feh:
 exec --no-startup-id feh --no-fehbg --bg-fill $BACKGROUND
 # Comosite Manager
-exec --no-startup-id compton --config /etc/xdg/compton.conf
+exec --no-startup-id compton
 
 bar {
 	font pango:mono 15
