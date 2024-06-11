@@ -1,8 +1,0 @@
-[user]
-	email = ryan@rbruno.com
-	name = Ryan Bruno
-[sendemail]
-    #smtpencryption = tls
-    smtpserver = smtp.rbruno.com
-    smtpuser = ryan@rbruno.com
-    smtpserverport = 25
