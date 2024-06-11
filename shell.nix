@@ -7,4 +7,7 @@ pkgs.mkShellNoCC {
   packages = with pkgs; [
     pkgs.stow
   ];
+  shellHook = ''
+    alias stow='stow --target=~/'
+  '';
 }
