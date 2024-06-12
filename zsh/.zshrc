@@ -41,4 +41,5 @@ autoload -Uz compinit && compinit
 # Aliases
 alias ls='ls --color'
 alias nr='nix-shell --run'
-alias stow='stow --target=~/ --dir=~/dotfiles/moved/'
+
+eval "$(zoxide init zsh)"
