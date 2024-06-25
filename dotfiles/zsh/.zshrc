@@ -41,6 +41,7 @@ autoload -Uz compinit && compinit
 # Aliases
 alias ls='ls --color'
 alias nr='nix-shell --run'
+alias ll='ls -al --color'
 
 if [ -x "$(command -v zoxide)" ]; then
   eval "$(zoxide init zsh)"
