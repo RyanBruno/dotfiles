@@ -2,7 +2,7 @@
 commit = 
 	   git add .
 	   git commit
-	   git push
+	   git push --all
 
 [src/RyanBruno/dotfiles]
 checkout = git clone 'git@github.com:RyanBruno/dotfiles.git' 'dotfiles'
