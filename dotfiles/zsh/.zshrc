@@ -43,6 +43,9 @@ alias ls='ls --color'
 alias nr='nix-shell --run'
 alias ll='ls -al --color'
 
+# Environment
+export EDITOR="nvim"
+
 if [ -x "$(command -v zoxide)" ]; then
   eval "$(zoxide init zsh)"
 fi
