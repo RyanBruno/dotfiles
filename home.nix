@@ -12,16 +12,19 @@
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
-    hello
     stow
     zsh
     zoxide
     mr
+    vim
+    firefox
   ];
 
   home.file = {
     ".zshrc".source = config.lib.file.mkOutOfStoreSymlink
     	"/home/ryan/.config/home-manager/dotfiles/zsh/.zshrc";
+    ".vimrc".source = config.lib.file.mkOutOfStoreSymlink
+    	"/home/ryan/.config/home-manager/dotfiles/vim/.vimrc";
     ".p10k.zsh".source = config.lib.file.mkOutOfStoreSymlink
     	"/home/ryan/.config/home-manager/dotfiles/zsh/.p10k.zsh";
     ".mrconfig".source = config.lib.file.mkOutOfStoreSymlink
@@ -29,7 +32,7 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "vim";
   };
 
   # Let Home Manager install and manage itself.
@@ -40,13 +43,13 @@
   #  enable = true;
   #};
 
-  # zsh
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-    viAlias = true;
-    vimdiffAlias = true;
-  };
+  # neovim
+  #programs.neovim = {
+  #  enable = true;
+  #  vimAlias = true;
+  #  viAlias = true;
+  #  vimdiffAlias = true;
+  #};
 
   # git
   programs.git = {
