@@ -4,9 +4,6 @@ commit =
 	   git commit
 	   git push --all
 
-[src/RyanBruno/dotfiles]
-checkout = git clone 'git@github.com:RyanBruno/dotfiles.git' 'dotfiles'
-
 [src/RyanBruno/tables]
 checkout = git clone 'git@github.com:RyanBruno/tables-project.git' 'tables'
 
